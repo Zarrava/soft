@@ -1,33 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-<!-- The meta data is actually not for humans to see, it's for machines to understand our website content -->
-
-
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
- <meta name="description" content="This is a tutorial on the basics of html,
- it helps you understand the structure of a webpage and how to create your own content.">
-   
-<meta name="keywords" content="HTML, tutorial, basics, structure, webpage, content">
- <meta name="author" content="Your Name">
-
-<title>My Web Project</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Soft - Interior decor studio crafting warm, elegant and functional spaces. Residential and commercial interior design, styling and renovation.">
+  <meta name="keywords" content="interior decor, interior design, home styling, renovation, Soft studio">
+  <meta name="author" content="Soft Interior Studio">
+  <title>Soft | Interior Decor Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-<!-- this is where the body content goes -->
- <h1>This is my world</h1>
-<p>This is a tutorial on the basics of html, it helps
-    you understand the structure of a webpage and
-    how to create your own content.
-</p>
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Soft<span class="logo-dot">.</span></a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact" class="btn btn-sm">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">Interior Decor Studio</p>
+      <h1>Spaces that feel like <em>home</em>.</h1>
+      <p class="hero-sub">We design warm, elegant and functional interiors for modern living — from concept to the final styling touch.</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">View Our Work</a>
+        <a href="#contact" class="btn btn-ghost">Start a Project</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="120">0</span><span class="stat-label">Projects Completed</span></div>
+        <div class="stat"><span class="stat-num" data-target="8">0</span><span class="stat-label">Years of Craft</span></div>
+        <div class="stat"><span class="stat-num" data-target="95">0</span><span class="stat-label">Happy Clients</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <div class="about-img main"></div>
+        <div class="about-img accent"></div>
+        <div class="about-badge">
+          <span class="badge-num">8+</span>
+          <span class="badge-text">Years of<br>Design</span>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow">About Soft</p>
+        <h2>We believe great interiors start with how you live.</h2>
+        <p>Soft is a boutique interior decor studio built on the idea that a home should reflect its people. We blend timeless aesthetics with thoughtful functionality — creating spaces that are beautiful, livable and uniquely yours.</p>
+        <p>From a single room refresh to a full home transformation, our team guides you through every step: concept, mood boards, material selection, sourcing and final styling.</p>
+        <ul class="about-list">
+          <li><span class="check">✓</span> Personalized design consultations</li>
+          <li><span class="check">✓</span> Curated material &amp; furniture sourcing</li>
+          <li><span class="check">✓</span> End-to-end project management</li>
+          <li><span class="check">✓</span> Sustainable &amp; local-first choices</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">What We Do</p>
+        <h2>Services tailored to your space</h2>
+        <p class="section-sub">Whether you're refreshing a corner or reimagining an entire home, we have a service that fits.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon">🏠</div>
+          <h3>Residential Design</h3>
+          <p>Full-home and single-room design that balances comfort, style and how you actually live day to day.</p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">🏢</div>
+          <h3>Commercial Spaces</h3>
+          <p>Offices, retail and hospitality interiors designed to elevate brand experience and productivity.</p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">🎨</div>
+          <h3>Color &amp; Styling</h3>
+          <p>Palette development, art curation and finishing touches that bring personality to any room.</p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">🔨</div>
+          <h3>Renovation Support</h3>
+          <p>From demolition plans to final fit-out, we coordinate trades and materials for a seamless remodel.</p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">🛋️</div>
+          <h3>Furniture Sourcing</h3>
+          <p>Access to trade-only vendors and custom pieces, selected to fit your budget and timeline.</p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">📐</div>
+          <h3>3D Visualization</h3>
+          <p>Photorealistic renders so you can walk through your new space before a single wall changes.</p>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- ================= PORTFOLIO ================= -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Our Work</p>
+        <h2>Selected projects</h2>
+        <p class="section-sub">A glimpse into spaces we've shaped with care.</p>
+      </div>
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="living">Living</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+        <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+        <button class="filter-btn" data-filter="office">Office</button>
+      </div>
+      <div class="portfolio-grid">
+        <figure class="portfolio-item reveal" data-category="living">
+          <div class="portfolio-img p1"></div>
+          <figcaption><h4>Sunlit Living Room</h4><span>Living · Residential</span></figcaption>
+        </figure>
+        <figure class="portfolio-item reveal" data-category="kitchen">
+          <div class="portfolio-img p2"></div>
+          <figcaption><h4>Warm Oak Kitchen</h4><span>Kitchen · Residential</span></figcaption>
+        </figure>
+        <figure class="portfolio-item reveal" data-category="bedroom">
+          <div class="portfolio-img p3"></div>
+          <figcaption><h4>Serene Master Suite</h4><span>Bedroom · Residential</span></figcaption>
+        </figure>
+        <figure class="portfolio-item reveal" data-category="office">
+          <div class="portfolio-img p4"></div>
+          <figcaption><h4>Creative Studio Office</h4><span>Office · Commercial</span></figcaption>
+        </figure>
+        <figure class="portfolio-item reveal" data-category="living">
+          <div class="portfolio-img p5"></div>
+          <figcaption><h4>Cozy Reading Nook</h4><span>Living · Residential</span></figcaption>
+        </figure>
+        <figure class="portfolio-item reveal" data-category="kitchen">
+          <div class="portfolio-img p6"></div>
+          <figcaption><h4>Minimalist Kitchen</h4><span>Kitchen · Residential</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">How We Work</p>
+        <h2>A simple, transparent process</h2>
+        <p class="section-sub">From first chat to final styling, we keep you informed at every step.</p>
+      </div>
+      <div class="process-steps">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3>Discovery</h3>
+          <p>We listen to your lifestyle, taste and budget to define the vision and scope.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <h3>Concept</h3>
+          <p>Mood boards, floor plans and 3D renders bring the direction to life for your approval.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <h3>Sourcing</h3>
+          <p>We select materials, furniture and finishes, then manage orders and timelines.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">04</div>
+          <h3>Installation</h3>
+          <p>Trades are coordinated and installed with care, on schedule and on budget.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">05</div>
+          <h3>Styling</h3>
+          <p>The finishing layer — art, textiles and accessories that make it feel like home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Client Love</p>
+        <h2>What our clients say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial reveal">
+          <p>"Soft transformed our dated living room into a space we never want to leave. Thoughtful, warm and exactly us."</p>
+          <footer>
+            <div class="avatar a1"></div>
+            <div><strong>Amara O.</strong><span>Homeowner, Lagos</span></div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p>"The 3D renders made decisions so easy. Our kitchen renovation finished on time and under budget."</p>
+          <footer>
+            <div class="avatar a2"></div>
+            <div><strong>Daniel K.</strong><span>Homeowner, Abuja</span></div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial reveal">
+          <p>"Professional, creative and genuinely caring. Our office now feels like a place people want to be."</p>
+          <footer>
+            <div class="avatar a3"></div>
+            <div><strong>Priya M.</strong><span>Founder, Studio Lumen</span></div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Let's design your space</h2>
+        <p>Tell us about your project and we'll get back within one business day.</p>
+        <ul class="contact-details">
+          <li><span class="ci">✉</span> hello@softstudio.com</li>
+          <li><span class="ci">☎</span> +234 81 435 21126</li>
+          <li><span class="ci">📍</span> 12 Adeola Odeku St, Victoria Island, Lagos</li>
+          <li><span class="ci">⏰</span> Mon–Sat, 9:00 AM – 6:00 PM</li>
+        </ul>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Pinterest">Pinterest</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+234 ...">
+          </div>
+          <div class="field">
+            <label for="service">Service</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option>Residential Design</option>
+              <option>Commercial Spaces</option>
+              <option>Color &amp; Styling</option>
+              <option>Renovation Support</option>
+              <option>Furniture Sourcing</option>
+              <option>3D Visualization</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your space, timeline and budget..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo logo-light">Soft<span class="logo-dot">.</span></a>
+        <p class="footer-tag">Designing warm, elegant and functional spaces since 2018.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#process">Process</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Residential</a></li>
+          <li><a href="#services">Commercial</a></li>
+          <li><a href="#services">Renovation</a></li>
+          <li><a href="#services">3D Visualization</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p>Design tips and project stories, monthly.</p>
+        <form class="newsletter" id="newsletterForm">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Soft Interior Studio. All rights reserved.</p>
+        <p>Made with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
-
-<footer>
-<!-- this is where the footer content goes -->
- <p>&copy; 2026 My Web Project. All rights reserved.</p>
-</footer>
-
-
 </html>
+
